@@ -9,17 +9,20 @@
 <div class="container">
     <h2>Hey Welcome, Register The User </h2>
 
-    <input type="text" id="name" placeholder="Full Name">
-    <input type="number" id="age" placeholder="Age">
-    <input type="text" id="phone" placeholder="Phone">
-    <input type="email" id="email" placeholder="Email">
-    <textarea id="address" placeholder="Address"></textarea>
-    <input type="number" id="pincode" placeholder="Pincode">
-    <input type="password" id="password" placeholder="Password">
+   <input type="text" id="name" placeholder="Full Name">
+<input type="number" id="age" placeholder="Age" min="1" max="120">
+<input type="text" id="phone" placeholder="Phone" maxlength="10">
+<input type="email" id="email" placeholder="Email">
+<textarea id="address" placeholder="Address"></textarea>
+<input type="text" id="pincode" placeholder="Pincode" maxlength="6">
+<input type="password" id="password" placeholder="Password">
 
-    <p class="error" id="error"></p>
+<p class="error" id="error"></p>
 
-    <button onclick="registerUser()">Sign Up</button>
+<button onclick="registerUser()">Sign Up</button>
+
+<button onclick="clearForm()" type="button">Clear</button>
+
 
     <div class="link">
         Already registered? <a href="login.html">Login</a>

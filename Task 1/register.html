@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome, Register User</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Welcome, Register User</h2>
+
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="number" id="age" placeholder="Age">
+    <input type="text" id="phone" placeholder="Phone">
+    <input type="email" id="email" placeholder="Email">
+    <textarea id="address" placeholder="Address"></textarea>
+    <input type="number" id="pincode" placeholder="Pincode">
+    <input type="password" id="password" placeholder="Password">
+
+    <p class="error" id="error"></p>
+
+    <button onclick="registerUser()">Sign Up</button>
+
+    <div class="link">
+        Already registered? <a href="login.html">Login</a>
+    </div>
+</div>
+
+<script src="register.js"></script>
+</body>
+</html>

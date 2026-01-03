@@ -1,39 +1,31 @@
 window.onload = function () {
-    let hint = localStorage.getItem("loginHint");
-    if (hint) {
-        document.getElementById("loginId").value = hint;
+    const email = localStorage.getItem("lastEmail");
+    if (email) {
+        document.getElementById("loginId").value = email;
     }
 };
 
 function loginUser() {
+    const loginId = document.getElementById("loginId").value.trim();
+    const loginPassword = document.getElementById("loginPassword").value.trim();
+    const error = document.getElementById("error");
 
-    let loginId = document.getElementById("loginId").value.trim();
-    let loginPassword = document.getElementById("loginPassword").value;
+    error.innerText = "";
 
-    if (loginId === "" || loginPassword === "") {
-        document.getElementById("error").innerText =
-            "All fields are required";
+    const user = JSON.parse(localStorage.getItem("userData"));
+
+    if (!user) {
+        error.innerText = "Please register first";
         return;
     }
 
-    let users = JSON.parse(localStorage.getItem("users")) || [];
-
-    if (users.length === 0) {
-        alert("No users registered. Please register first.");
-        window.location.href = "register.html";
-        return;
-    }
-
-    let matchedUser = users.find(u =>
-        (u.email === loginId || u.phone === loginId) &&
-        u.password === loginPassword
-    );
-
-    if (matchedUser) {
-        localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
+    if (
+        (loginId === user.email || loginId === user.phone) &&
+        loginPassword === user.password
+    ) {
+        localStorage.setItem("loggedInUser", JSON.stringify(user));
         window.location.href = "user.html";
     } else {
-        document.getElementById("error").innerText =
-            "Invalid Email/Phone or Password";
+        error.innerText = "Email/Phone or Password not match";
     }
 }

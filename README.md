@@ -1,4 +1,4 @@
-﻿# sz-internship-tasks
+﻿# Sanket-Zagade-internship-tasks
 
 
 This repository contains all tasks completed during my internship.
@@ -8,5 +8,6 @@ This repository contains all tasks completed during my internship.
 -
 
 Each task is placed in a separate folder.
+
 
 

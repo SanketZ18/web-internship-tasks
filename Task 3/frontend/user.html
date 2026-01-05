@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>User Profile</h2>
+
+    <label>Full Name</label>
+    <input id="uName" disabled>
+
+    <label>Age</label>
+    <input id="uAge" disabled>
+
+    <label>Phone</label>
+    <input id="uPhone" disabled>
+
+    <label>Email</label>
+    <input id="uEmail" disabled>
+
+    <label>Address</label>
+    <textarea id="uAddress" disabled></textarea>
+
+    <label>Pincode</label>
+    <input id="uPincode" disabled>
+
+    <button onclick="enableEdit()">Update Profile</button>
+    <button id="saveBtn" onclick="saveProfile()" style="display:none">
+        Update the Changes
+    </button>
+
+    <button onclick="openPopup()">Change Password</button>
+    <button onclick="logoutUser()" style="background:#e74c3c">
+        Logout
+    </button>
+</div>
+
+<!-- PASSWORD POPUP -->
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Change Password</h3>
+
+        <input type="password" id="oldPass" placeholder="Old Password">
+        <input type="password" id="newPass" placeholder="New Password">
+
+        <!-- BETTER CHECKBOX -->
+        <div class="checkbox-row">
+            <input type="checkbox" id="confirmCheck">
+            <label for="confirmCheck">
+                I confirm to change my password
+            </label>
+        </div>
+
+        <p class="error" id="passError"></p>
+
+        <button onclick="changePassword()">Change Password</button>
+        <button onclick="closePopup()">Cancel</button>
+    </div>
+</div>
+
+<script src="user.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "id": "9e81",
+      "name": "Sanket Zagade",
+      "age": "21",
+      "phone": "9766260920",
+      "email": "sanketzagade0018@gmail.com",
+      "address": "A/p Malegaon bk Tal-Baramati Dist-Pune",
+      "pincode": "413115",
+      "password": "123456"
+    }
+  ]
+}

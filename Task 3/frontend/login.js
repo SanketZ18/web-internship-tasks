@@ -17,7 +17,7 @@ function loginUser() {
         return;
     }
 
-    // ✅ NEW: GET users from API
+    //  NEW: GET users from API
     fetch("http://localhost:3000/users")
         .then(res => res.json())
         .then(users => {

@@ -46,7 +46,7 @@ function registerUser() {
         password
     };
 
-    // ✅ NEW: POST API instead of localStorage
+    //  NEW: POST API instead of localStorage
     fetch("http://localhost:3000/users", {
         method: "POST",
         headers: {

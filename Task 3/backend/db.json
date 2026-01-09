@@ -9,6 +9,16 @@
       "address": "A/p Malegaon bk Tal-Baramati Dist-Pune",
       "pincode": "413115",
       "password": "123456"
+    },
+    {
+      "id": "c154",
+      "name": "Geeta Pravin Taware",
+      "age": "21",
+      "phone": "9309946486",
+      "email": "taware.geeta13@gmail.com",
+      "address": "Chandani Chouk , Sangavi \nTal - Baramati\nDist - Pune",
+      "pincode": "413101",
+      "password": "123456"
     }
   ]
 }

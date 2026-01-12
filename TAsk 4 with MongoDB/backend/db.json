@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "ad4d",
+      "name": "abc",
+      "age": "21",
+      "phone": "9638527410",
+      "email": "abc@gmail.com",
+      "address": "pune",
+      "pincode": "963852",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    },
+    {
+      "id": "859f",
+      "name": "SUDARSHANA DILIP ZAGADE",
+      "age": "22",
+      "phone": "9860130971",
+      "email": "zagadesudarshana@gmail.com",
+      "address": "Jejuri",
+      "pincode": "412303",
+      "password": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92"
+    },
+    {
+      "id": "1a39",
+      "name": "sudarshana",
+      "age": "21",
+      "phone": "9860130971",
+      "email": "sudarshanazagade@gmail.com",
+      "address": "jejuri",
+      "pincode": "412303",
+      "password": "472bbe83616e93d3c09a79103ae47d8f71e3d35a966d6e8b22f743218d04171d"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="container">
+<h2>Login</h2>
+<label>Email</label><input id="email">
+<label>Password</label>
+<div class="password-box">
+  <input type="password" id="password">
+  <span class="eye" onclick="togglePassword()">👁</span>
+</div>
+
+<p class="error" id="error"></p>
+<button onclick="login()">Login</button>
+<button onclick="goBack()">Back to Register</button>
+
+</div>
+<script src="login.js"></script>
+</body>
+</html>
